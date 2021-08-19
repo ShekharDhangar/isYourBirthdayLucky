@@ -79,3 +79,7 @@ span{
     display: inline;
     margin: 0.2rem;    
 }
+.privacy-notice{
+    font-weight: bold;
+    margin-top: 10px;
+}
