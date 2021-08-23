@@ -6,18 +6,15 @@ const output = document.querySelector(".output-para");
 function sumOfDOB(){
     
     const dob = dateOfBirth.value;
-    if(luckyNumber.value==""){
-        output.innerText = "Please enter a number";
+    if(dob=="" || luckyNumber.value==""){
+        output.innerText = "Please enter both fields";
     }else{
     const finaldate = dob.replaceAll("-","");
         let sum = 0;
         for(var i = 0;i<finaldate.length;i++){
             sum += Number(finaldate[i])
         }
-        if(sum && dob)
         calculateAns(sum,luckyNumber.value);
-        else
-        output.innerText = "Enter both fields";
     }
 }
 
